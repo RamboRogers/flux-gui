@@ -1,0 +1,14 @@
+[Unit]
+Description=Run Flux Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/matt/Sourcecode/ai/image/flux/runflux.sh
+WorkingDirectory=/home/matt/Sourcecode/ai/image/flux
+Restart=on-failure
+User=matt
+Environment=PATH=/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=multi-user.target
