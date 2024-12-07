@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/home/matt/Sourcecode/ai/image/flux/runflux.sh
-WorkingDirectory=/home/matt/Sourcecode/ai/image/flux
+ExecStart=/home/matt/Sourcecode/ai/image/flux-gui/runflux.sh
+WorkingDirectory=/home/matt/Sourcecode/ai/image/flux-gui
 Restart=on-failure
 User=matt
 Environment=PATH=/usr/local/bin:/usr/bin:/bin
